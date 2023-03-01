@@ -1,0 +1,747 @@
+:root{
+    --primary-color: #FFF6F4;
+    --dark: #0b090a;
+    --red: #ba181b;
+    --gray: #8a817c;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Mukta', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--dark);
+}
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 3rem 0 3rem 0;
+}
+
+h2{
+    font-family: 'Lobster Two', cursive;
+    font-weight: 700;
+    font-size: 5rem;
+    color: var(--dark);
+}
+
+h3{
+    font-size: 2.4rem;
+    padding-top: 2rem;
+    color: var(--dark);
+}
+
+a{
+    color: var(--dark);
+    font-weight: 700;
+}
+
+.nav a.selected {
+    color: var(--red);
+  }
+
+/**************************** Main Nav ***************************************/
+
+.main-nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    z-index: 100;
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.5);
+}
+
+.nav-container{
+    max-width: 105rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 6rem;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.nav{
+    display: flex;
+    list-style: none;
+}
+
+.nav li a{
+    margin: 1rem;
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 700;
+}
+
+/**************************** Inicio Component ***************************************/
+
+.slider-content{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/img/bread.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.slider-content::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.slider-content h2{
+    font-size: 5rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.slider-content p {
+    padding-top: 3rem;
+    width: 60%;
+    text-align: center;
+}
+
+.slider-content a{
+    color: var(--primary-color);
+}
+
+.call{
+    border: solid 0.1rem var(--primary-color);
+    font-size: 2rem;
+    padding: 1rem 2rem 1rem 2rem;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+/**************************** Nosotros Component ***************************************/
+
+#nosotros{
+    max-width: 105rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10rem;
+}   
+
+.item-a{
+    width: 50%;
+}
+
+.item-b{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nosotros-img{
+    width: 80%;
+    object-fit: contain;
+}
+
+.show-text{
+    padding-left: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--red);
+}
+
+@media (max-width: 480px) {
+
+    #nosotros{
+        max-width: 90%;
+    }   
+
+    .item-a{
+        width: 100%;
+    }
+
+    .item-b{
+        width: 100%;
+    }
+}
+
+/**************************** Productos Component ***************************************/
+
+#productos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#productos::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../assets/img/products.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: .2;
+    z-index: -1;
+}
+
+.card-container{
+    max-width: 105rem;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-top: 5rem;
+}
+
+.paragraph-product{
+    text-align: justify;
+}
+
+.card{
+    width: 33.33333%;
+    padding: 2rem;
+}
+
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+
+
+@media (max-width: 480px) {
+    .card{
+        width: 100%;
+    }
+}
+
+/**************************** Menu Component ***************************************/
+
+#menu{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/img/background-menu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.menu-container{
+    width: 105rem;
+    height: 85%;
+    background-color: rgba(4, 4, 32, 0.884);
+}
+
+.title-menu{
+    height: 10%;
+    text-align: center;
+    padding: 1rem;
+    color: var(--primary-color);
+    font-size: 3.5rem;
+}
+
+.icons-container{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.icons-container li i{
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.icon-flex{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.icon-flex h3{
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.img-product{
+    width: 7rem;
+    height: 7rem;
+    object-fit: contain;
+}
+
+.slider-card-content{
+    display: flex;
+    height: 70%;
+}
+
+.card-menu-container{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33.33333% 33.33333% 33.33333%;
+    column-gap: 1rem;
+    padding: 2rem;
+}
+
+.card-menu{
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    border-bottom: dashed 0.1rem var(--gray);
+}
+
+.card-menu h3{
+    padding: 0;
+}
+
+.product-description-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.product-name{
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+
+.price{
+    font-size: 1.8rem;
+    color: var(--red);
+    font-weight: 700;
+}
+
+.description-product{
+    color: var(--primary-color);
+    font-size: 1.4rem;
+}
+
+.btn-menu{
+    width: 2.5%;
+    background-color: rgba(4, 4, 32, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-menu i{
+    font-size: 1.8rem;
+    color: var(--red);
+}
+
+.btn-disabled{
+    cursor: not-allowed;
+    background-color: rgba(128, 128, 128, 0);
+}
+
+.btn-disabled i{
+    color: var(--gray);
+}
+
+@media (max-width: 480px) {
+
+    .menu-container{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(4, 4, 32, 0.884);
+        padding-bottom: 2rem;
+    }
+
+    .icons-container{
+        width: 95%;
+        overflow-x: auto;
+        justify-content: flex-start;
+    }
+
+    .card-menu-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+    .btn-menu{
+        display: none;
+    }
+}
+
+/**************************** Sucursal Component ***************************************/
+
+#sucursales{
+    max-width: 105rem;
+    padding-top: 10rem;
+    margin: 0 auto;
+}
+
+.title-locations{
+    text-align: center;
+}
+
+.slider-location-container{
+    display: flex;
+    padding-top: 5rem;
+}
+
+.card-map-container{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 33.333333% 33.333333% 33.333333%;
+    list-style: none;
+}
+
+.card-map{
+    padding: 2rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn-location{
+    width: 2.5%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.icon-location{
+    font-size: 2rem;
+    color: var(--red);
+}
+
+@media (max-width: 480px) {
+
+    .btn-location{
+        display: none;
+    }
+
+    .card-map-container{
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(7, 80%);
+        list-style: none;
+        overflow-x: auto;
+    }
+
+    .card-map-container::-webkit-scrollbar{
+        display: none;
+    }
+
+}
+
+/**************************** Contacto Component ***************************************/
+
+#contacto{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/img/background-contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 10rem;
+    z-index: 0;
+}
+
+#contacto::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.contact-container{
+    max-width: 105rem;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.social{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social i{
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+.title-contact{
+    color: var(--primary-color);
+}
+
+.contact-form{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.form-item{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+}
+
+.form-item input{
+    width: 100%;
+    height: 4rem;
+    background: none;
+    border: none;
+    border-bottom: solid 0.1rem var(--primary-color);
+    outline: none;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.form-item input::placeholder{
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.message{
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: solid 0.1rem var(--primary-color);
+    outline: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.message::placeholder{
+    color: var(--primary-color);
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.btn-send-content{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.send-btn{
+    width: 10rem;
+    height: 4rem;
+    border: solid 0.1rem var(--primary-color);
+    background: none;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+
+    .contact-container{
+        padding: 2rem;
+    }
+
+    .title-contact{
+        font-size: 3.5rem;
+    }
+
+    .social{
+        width: 30%;
+    }
+
+    .social i{
+        font-size: 2.5rem;
+    }
+
+    .contact-form{
+        width: 70%;
+    }
+
+    .labels-content{
+        gap: 2rem;
+    }
+}
+
+/**************************** Labels Component ***************************************/
+
+.labels-content{
+    max-width: 105rem;
+    margin: 0 auto;
+    padding: 10rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.labels{
+    width: 15rem;
+    height: 15rem;
+    object-fit: contain;
+}
+
+@media (max-width: 480px) {
+
+    .labels-content{
+        max-width: 80%;
+    }
+
+    .labels{
+        width: 10rem;
+        height: 10rem;
+        object-fit: contain;
+    }
+}
+
+/**************************** Footer ***************************************/
+
+footer{
+    background-color: var(--dark);
+    height: 5rem;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer a{
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.developer-container{
+    display: flex;
+    align-items: center;
+}
+
+.separator{
+    color: var(--red);
+}
+
+.ae-logo{
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+    margin-left: 1rem;
+}
+
+@media (max-width: 480px) {
+
+    footer{
+        padding: 1rem;
+    }
+
+    footer p{
+        font-size: 1.4rem;
+    }
+
+    .developer-container a{
+        font-size: 1.4rem;
+    }
+}
+
+/**************************** NavMobile ***************************************/
+
+.nav-mobile-container{
+    width: 100%;
+    height: 100vh;
+    background-color: #0b090ad8;
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    list-style: none;
+}
+
+.title-menu-mobile{
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.bar-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 2rem;
+    z-index: 100;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+@media (max-width: 480px) {
+    .main-nav{
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav-mobile-container{
+        display: none;
+    }
+}
