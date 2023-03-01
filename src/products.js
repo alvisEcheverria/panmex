@@ -37,7 +37,7 @@ import chorizo from './assets/img/menu/chorizo.png';
 import diva from './assets/img/menu/diva.png';
 import hawaiana from './assets/img/menu/hawaiana.png';
 import tortaHuevo from './assets/img/menu/torta-huevo.png';
-//import tortaHuevoQueso from './assets/img/menu/torta-huevo-queso.png';
+import tortaHuevoQueso from './assets/img/menu/torta-huevo-queso.png';
 import tortaJamon from './assets/img/menu/torta-jamon.png';
 import tortaJamonQueso from './assets/img/menu/torta-jamon-queso.png';
 import tortaMilanesa from './assets/img/menu/torta-milanesa.png';
@@ -275,7 +275,7 @@ const menu = [
                 name: 'Huevo con Queso',
                 midPrice: null,
                 bigPrice: 62.00,
-                img: null,
+                img: tortaHuevoQueso,
             },
             {
                 name: 'Jamón',
