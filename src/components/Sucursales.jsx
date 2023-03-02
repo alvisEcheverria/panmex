@@ -23,25 +23,25 @@ const Sucursales = () => {
             map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7531.5555873925605!2d-99.217003!3d19.292027!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdff943afaeb91%3A0xa80c83eb508a8555!2spanmex!5e0!3m2!1ses-419!2sus!4v1676671901478!5m2!1ses-419!2sus"
         },
         {
-            name: "PLAZA INN",
+            name: "SAN ÁNGEL",
             description: "Av. Insurgentes  #1971 Local 40 Centro Comercial Plaza Inn Guadalupe Inn 01020 CDMX",
             tel: "+52 55 5661 1758",
             map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7528.788076162248!2d-99.19570334609377!3d19.35208370000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fff6e2f4bde9%3A0xa45eefc2410e44c!2sPanMex!5e0!3m2!1ses-419!2sus!4v1676671968623!5m2!1ses-419!2sus"
         },
         {
-            name: "AMORES",
+            name: "DEL VALLE",
             description: "Amores #1431 Piso 1 Col. del Valle Alcaldía Benito Juárez 03100 CDMX",
             tel: "+52 55 9264 3746",
             map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d235.24498793473623!2d-99.16940449475676!3d19.37262471520058!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff425f782c25%3A0xfbf42bcc41d89e4e!2sPANMEX%20PANADER%C3%8DA%20AMORES!5e0!3m2!1ses-419!2sus!4v1676672041052!5m2!1ses-419!2sus"
         },
         {
-            name: "IRRIGACIÓN",
+            name: "POLANCO",
             description: "Boulevard Miguel Cervantes Saavedra #476 Irrigación CP 11500 CDMX",
             tel: "+52 55 5395 0706",
             map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7524.6804778918495!2d-99.20735553967286!3d19.440892154561972!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d20219b71e505b%3A0xfaf89f8e9d674a37!2sPANMEX!5e0!3m2!1ses-419!2sus!4v1676672081930!5m2!1ses-419!2sus"
         },
         {
-            name: "BARRANCA",
+            name: "GUADALUPE INN",
             description: "Manuel M. Ponce #83 Col. Guadalupe Inn Alcaldía Alvaro Obregón 01020 CDMX",
             tel: "+52 55 9240 6644",
             map: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d235.26187844457263!2d-99.18517753380468!3d19.360921659122944!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffdcd0aad05d%3A0xce6d152e4bb897ed!2sPanmex%20Panificadora!5e0!3m2!1ses-419!2sus!4v1676671323534!5m2!1ses-419!2sus"

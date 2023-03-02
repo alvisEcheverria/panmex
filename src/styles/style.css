@@ -55,7 +55,18 @@ a{
 
 .nav a.selected {
     color: var(--red);
-  }
+}
+
+@media (max-width: 480px) {
+    h2{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
+}
 
 /**************************** Main Nav ***************************************/
 
@@ -93,6 +104,12 @@ a{
     text-decoration: none;
     color: var(--dark);
     font-weight: 700;
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .nav-container{
+        max-width: 80%;
+    }
 }
 
 /**************************** Inicio Component ***************************************/
@@ -146,6 +163,16 @@ a{
     cursor: pointer;
 }
 
+@media (max-width: 280px) {
+    h1{
+        font-size: 2rem;
+    }
+
+    .slider-content h2{
+        font-size: 4rem;
+    }
+}
+
 /**************************** Nosotros Component ***************************************/
 
 #nosotros{
@@ -192,6 +219,37 @@ a{
     .item-b{
         width: 100%;
     }
+
+    .nosotros-img{
+        padding-top: 5rem;
+    }
+}
+
+@media (min-width: 540px) and (max-width: 912px) {
+
+    #nosotros{
+        max-width: 90%;
+    }   
+
+    .item-a{
+        width: 100%;
+    }
+
+    .item-b{
+        width: 100%;
+    }
+
+    .nosotros-img{
+        width: 50%;
+        padding-top: 5rem;
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    #nosotros{
+        max-width: 80%;
+    }
 }
 
 /**************************** Productos Component ***************************************/
@@ -236,8 +294,14 @@ a{
     padding: 2rem;
 }
 
-.card img{
-    width: 100%;
+.img-product-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-product-content img{
+    width: 80%;
     object-fit: contain;
 }
 
@@ -245,6 +309,12 @@ a{
 @media (max-width: 480px) {
     .card{
         width: 100%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .card-container{
+        max-width: 80%;
     }
 }
 
@@ -383,7 +453,7 @@ a{
     color: var(--gray);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 912px) {
 
     .menu-container{
         width: 100%;
@@ -407,6 +477,28 @@ a{
 
     .btn-menu{
         display: none;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .menu-container{
+        max-width: 80%;
+    }
+
+    .product-name{
+        font-size: 1.4rem;
+    }
+
+    .description-product{
+        font-size: 1.2rem;
+    }
+
+    .price{
+        font-size: 1.6rem;
+    }
+
+    .icon-flex h3{
+        font-size: 1.3rem;
     }
 }
 
@@ -473,6 +565,12 @@ a{
         display: none;
     }
 
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    #sucursales{
+        max-width: 80%;
+    }
 }
 
 /**************************** Contacto Component ***************************************/
@@ -595,6 +693,25 @@ a{
     cursor: pointer;
 }
 
+.icon-cursor{
+    cursor: pointer;
+}
+
+@media (max-width: 280px) {
+
+    .form-item input::placeholder{
+        font-size: 1.2rem;
+    }
+
+    .form-item input{
+        font-size: 1.2rem;
+    }
+
+    .message::placeholder{
+        font-size: 1.2rem;
+    }
+}
+
 @media (max-width: 480px) {
 
     .contact-container{
@@ -622,6 +739,12 @@ a{
     }
 }
 
+@media (min-width: 540px) and (max-width: 1279px) {
+    .contact-container{
+        max-width: 80%;
+    }
+}
+
 /**************************** Labels Component ***************************************/
 
 .labels-content{
@@ -640,7 +763,20 @@ a{
     object-fit: contain;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 912px) {
+
+    .labels-content{
+        max-width: 95%;
+    }
+
+    .labels{
+        width: 10rem;
+        height: 10rem;
+        object-fit: contain;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
 
     .labels-content{
         max-width: 80%;
@@ -685,6 +821,7 @@ footer a{
     margin-left: 1rem;
 }
 
+
 @media (max-width: 480px) {
 
     footer{
@@ -699,6 +836,27 @@ footer a{
         font-size: 1.4rem;
     }
 }
+
+@media (max-width: 280px) {
+
+    footer{
+        padding: 0.5rem;
+    }
+
+    footer p{
+        font-size: 1.2rem;
+    }
+
+    .developer-container a{
+        font-size: 1.2rem;
+    }
+
+    .ae-logo{
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
 
 /**************************** NavMobile ***************************************/
 
@@ -734,7 +892,13 @@ footer a{
     color: var(--primary-color);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 280px){
+    .title-menu-mobile{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 912px) {
     .main-nav{
         display: none;
     }

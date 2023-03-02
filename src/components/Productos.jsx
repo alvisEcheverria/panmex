@@ -7,13 +7,13 @@ const Productos = () => {
     
     const products = [
         {
-            name: 'Panaderia',
-            description: 'PanMex es la única panadería en MÉXICO que sigue elaborando mas de 70 variedades de pan algunas con origenes desde la colonia española. El pan de PanMex es el único pan dulce en MÉXICO que mantiene la tradición de ser elaborado artesanalmente, utilizar ingredientes naturales sin ningun conservador y el cual mantiene un sabor, tamaño y presentación de un pan gourmet.',
+            name: 'Panadería',
+            description: 'PANMEX es la única panadería en MÉXICO que sigue elaborando más de 70 variedades de pan algunas con orígenes desde la colonia española. PANMEX es el único pan dulce en MÉXICO que mantiene la tradición de ser elaborado artesanalmente, utilizar ingredientes naturales sin ningún conservador y el cual mantiene un sabor, tamaño y presentación de un pan gourmet.',
             img: pan
         },
         {
-            name: 'Pasteleria',
-            description: 'No puede faltar en esos momentos especiales un pastel de PanMex, bellamente decorados y con el sabor de tradición que solo una manufactura artesanal y los mejores ingredientes le pueden dar, los pasteles de PanMex son una delicia, familiares o individuales todo para que disfrutes un delicioso momento a tus gusto. ¡Celebra con el exquisito sabor tradicional de un pastel de PanMex!',
+            name: 'Pastelería',
+            description: 'No puede faltar en esos momentos especiales un pastel de PANMEX, bellamente decorados y con el sabor de tradición que solo una manufactura artesanal y los mejores ingredientes le pueden dar, los pasteles de PANMEX son una delicia, familiares o individuales todo para que disfrutes un delicioso momento a tu gusto. ¡Celebra con el exquisito sabor tradicional de un pastel de PANMEX!',
             img: pastel
         },
         {
@@ -30,7 +30,9 @@ const Productos = () => {
                 {
                     products.map(product =>(
                         <li className='card'>
-                            <img src={product.img} alt="producto" />
+                            <div className='img-product-content'>
+                                <img src={product.img} alt="producto" />
+                            </div>
                             <h3>{product.name}</h3>
                             <p className='paragraph-product'>{product.description}</p>
                         </li>

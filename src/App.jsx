@@ -31,9 +31,39 @@ import NavMobile from './components/NavMobile'
 
 function App() {
 
-  const bakeryImgs = [ bakery1960, bakerySweet, bakeryQuality, bakeryEco, bakeryFresh, bakeryOrganic ];
+  const bakeryImgs = [ 
+    {
+      logo: bakery1960
+    },
+    {
+      logo: bakerySweet
+    },
+    {
+      logo: bakeryQuality
+    },
+    {
+      logo: bakeryEco
+    },
+    {
+      logo: bakeryFresh
+    }, 
+    {
+      logo: bakeryOrganic
+    }
+  ];
 
-  const deliveryImgs = [ rappiLogo, uberEats, didiLogo ];
+  const deliveryImgs = [ 
+    { 
+      logo: rappiLogo,
+      link: 'https://www.rappi.com.mx/restaurantes/delivery/1917-panmex'
+    },
+    {
+      logo: uberEats
+    },
+    {
+      logo: didiLogo
+    }
+  ];
 
   return (
     <>

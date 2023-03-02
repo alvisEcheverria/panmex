@@ -7,7 +7,7 @@ const Labels = ({imgs}) => {
             {
                 imgs.map((img, index) =>(
                     <li key={index}>
-                        <img className='labels' src={img} alt="labels" />
+                       <a href={img.link} target='_blank'><img className='labels' src={img.logo} alt="labels" /></a> 
                     </li>
                 ))
             }

@@ -31,10 +31,10 @@ const Contacto = () => {
         <section id='contacto'>
             <div className='contact-container'>
                 <div className='social'>
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
+                    <a href="https://www.facebook.com/panmexoficial" target='_blank'><i className="fa-brands fa-facebook-f icon-cursor"></i></a>
+                    <a href="https://twitter.com/PanmexOficial" target='_blank'><i className="fa-brands fa-twitter icon-cursor"></i></a>
+                    <a href="https://www.instagram.com/panmexoficial/" target='_blank'><i className="fa-brands fa-instagram icon-cursor"></i></a>
+                    <a href="#" target='_blank'><i className="fa-brands fa-whatsapp icon-cursor"></i></a>
                 </div>
                 <form onSubmit={sendEmail} className='contact-form'>
                     <h2 className='title-contact'>Contáctanos</h2>
