@@ -337,24 +337,32 @@ a{
     width: 105rem;
     height: 85%;
     background-color: rgba(4, 4, 32, 0.884);
+    position: relative;
 }
 
 .title-menu{
     height: 10%;
     text-align: center;
-    padding: 1rem;
+    padding: 4rem 0rem 3rem 0rem ;
     color: var(--primary-color);
     font-size: 3.5rem;
 }
 
+.items-content{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .icons-container{
     width: 100%;
-    height: 20%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
     list-style: none;
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
     margin: 0 auto;
 }
 
@@ -366,7 +374,8 @@ a{
 .icon-flex{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content: center;
+    gap: 0.5rem;
     padding: 1rem;
     cursor: pointer;
 }
@@ -378,30 +387,39 @@ a{
     color: var(--primary-color);
 }
 
+.img-menu-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .img-product{
-    width: 7rem;
-    height: 7rem;
+    width: 9rem;
+    height: 9rem;
     object-fit: contain;
+    object-position: center;
 }
 
 .slider-card-content{
     display: flex;
     height: 70%;
+    position: relative;
 }
 
 .card-menu-container{
     width: 95%;
+    height: 95%;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 33.33333% 33.33333% 33.33333%;
-    column-gap: 1rem;
+    column-gap: 5%;
     padding: 2rem;
 }
 
 .card-menu{
     width: 100%;
     display: flex;
-    padding: 1rem;
+    padding: 0.5rem;
     border-bottom: dashed 0.1rem var(--gray);
 }
 
@@ -413,30 +431,90 @@ a{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1rem 0 1rem 1rem;
 }
 
 .product-name{
     font-size: 1.6rem;
     color: var(--primary-color);
+    line-height: 1.8rem;
+}
+
+.description-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.price-container{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.size{
+    font-size: 1.3rem;
+    color: var(--red);
 }
 
 .price{
-    font-size: 1.8rem;
-    color: var(--red);
+    font-size: 1.5rem;
+    color: var(--primary-color);
     font-weight: 700;
 }
 
 .description-product{
     color: var(--primary-color);
     font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.chilaquil-sopes-content{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    color: var(--primary-color);
+    line-height: 1.8rem;
+    list-style: none;
+}
+
+.chilaquil-sopes-content li p{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+.size-price-chila-sop{
+    font-size: 1rem; 
+    color: var(--red);
 }
 
 .btn-menu{
-    width: 2.5%;
+    width: 3rem;
     background-color: rgba(4, 4, 32, 0);
     border: none;
     cursor: pointer;
+}
+
+.btn-menu:hover{
+    background-color: rgba(7, 7, 32, 0.37);
+}
+
+.btn-menu-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.btn-menu-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .btn-menu i{
@@ -446,6 +524,10 @@ a{
 
 .btn-disabled{
     cursor: not-allowed;
+    background-color: rgba(128, 128, 128, 0);
+}
+
+.btn-disabled:hover{
     background-color: rgba(128, 128, 128, 0);
 }
 
@@ -466,6 +548,7 @@ a{
         width: 95%;
         overflow-x: auto;
         justify-content: flex-start;
+        padding: 0;
     }
 
     .card-menu-container{
@@ -477,6 +560,34 @@ a{
 
     .btn-menu{
         display: none;
+    }
+
+    .icon-flex{
+        gap: 1rem;
+    }
+
+    .description-container{
+        width: 70%;
+    }
+
+    .price-container{
+        width: 30%;
+    }
+
+    .description-product{
+        padding-right: 0.5rem;
+        line-height: 2rem;
+    }
+
+    .footer-menu{
+        color: var(--primary-color);
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.2rem;
+        position: absolute;
+        bottom: 1rem;
+        right: 0;
+        left: 0;
     }
 }
 
@@ -499,6 +610,14 @@ a{
 
     .icon-flex h3{
         font-size: 1.3rem;
+    }
+
+    .description-container{
+        width: 70%;
+    }
+
+    .price-container{
+        width: 30%;
     }
 }
 
@@ -889,7 +1008,7 @@ footer a{
     padding: 2rem;
     z-index: 100;
     font-size: 2rem;
-    color: var(--primary-color);
+    color: var(--gray);
 }
 
 @media (max-width: 280px){
@@ -906,6 +1025,14 @@ footer a{
 
 @media (min-width: 1024px) {
     .nav-mobile-container{
+        display: none;
+    }
+
+    .bar-menu{
+        display: none;
+    }
+
+    .footer-menu{
         display: none;
     }
 }
