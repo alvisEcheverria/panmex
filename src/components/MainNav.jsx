@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import logo from '../assets/img/logo.png'
+import logo from '../assets/img/logo.webp'
 
 const MainNav = () => {
 
@@ -36,20 +36,20 @@ const MainNav = () => {
     return (
         <nav className="main-nav">
             <div className='nav-container'>
-            <a href='#'>
-                <img 
-                className='logo' 
-                src={logo} 
-                alt="Logotipo de Panmex"/>
-            </a>
-            <ul className='nav'>
-                <li><a href='#' className={selected === "inicio" && "selected"}>Inicio</a></li>
-                <li><a href='#nosotros' className={selected === "nosotros" && "selected"}>Nosotros</a></li>
-                <li><a href='#productos' className={selected === "productos" && "selected"}>Productos</a></li>
-                <li><a href='#menu' className={selected === "menu" && "selected"}>Menu de Alimentos</a></li>
-                <li><a href='#sucursales' className={selected === "sucursales" && "selected"}>Sucursales</a></li>
-                <li><a href='#contacto' className={selected === "contacto" && "selected"}>Contáctanos</a></li>
-            </ul>
+                <a href='#'>
+                    <img 
+                    className='logo' 
+                    src={logo} 
+                    alt="Logotipo de Panmex"/>
+                </a>
+                <ul className='nav'>
+                    <li><a href='#' className={selected === "inicio" && "selected"}>Inicio</a></li>
+                    <li><a href='#nosotros' className={selected === "nosotros" && "selected"}>Nosotros</a></li>
+                    <li><a href='#productos' className={selected === "productos" && "selected"}>Productos</a></li>
+                    <li><a href='#menu' className={selected === "menu" && "selected"}>Menu de Alimentos</a></li>
+                    <li><a href='#sucursales' className={selected === "sucursales" && "selected"}>Sucursales</a></li>
+                    <li><a href='#contacto' className={selected === "contacto" && "selected"}>Contáctanos</a></li>
+                </ul>
             </div>
         </nav>
     );

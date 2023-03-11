@@ -1,7 +1,7 @@
 import React from 'react';
-import pan from '../assets/img/pan.png';
-import pastel from '../assets/img/pastel.png';
-import gelato from '../assets/img/gelato.png';
+import pan from '../assets/img/pan.webp';
+import pastel from '../assets/img/pastel.webp';
+import gelato from '../assets/img/gelato.webp';
 
 const Productos = () => {
     

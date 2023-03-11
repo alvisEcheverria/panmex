@@ -10,18 +10,18 @@ import './styles/style.css'
 
 /**** Bakery Labels *****/
 
-import bakery1960 from './assets/img/bakery-1960.png';
-import bakerySweet from './assets/img/bakery-sweet.png';
-import bakeryQuality from './assets/img/bakery-quality.png';
-import bakeryEco from './assets/img/bakery-eco.png';
-import bakeryFresh from './assets/img/bakery-fresh.png';
-import bakeryOrganic from './assets/img/bakery-organic.png';
+import bakery1960 from './assets/img/bakery-1960.webp';
+import bakerySweet from './assets/img/bakery-sweet.webp';
+import bakeryQuality from './assets/img/bakery-quality.webp';
+import bakeryEco from './assets/img/bakery-eco.webp';
+import bakeryFresh from './assets/img/bakery-fresh.webp';
+import bakeryOrganic from './assets/img/bakery-organic.webp';
 
 /**** Delivery Labels *****/
 
-import rappiLogo from './assets/img/rappi-logo.png';
-import uberEats from './assets/img/uber-eats.png';
-import didiLogo from './assets/img/didi-logo.png';
+import rappiLogo from './assets/img/rappi-logo.webp';
+import uberEats from './assets/img/uber-eats.webp';
+import didiLogo from './assets/img/didi-logo.webp';
 
 /**** Designed by logo*****/
 

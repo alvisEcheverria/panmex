@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import panadero from '../assets/img/panadero.png'
+import panadero from '../assets/img/panadero.webp'
 
 const Nosotros = () => {
     
