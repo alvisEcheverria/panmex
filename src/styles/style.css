@@ -57,6 +57,10 @@ a{
     color: var(--red);
 }
 
+.nav a.selected:hover{
+    color: var(--red);
+}
+
 @media (max-width: 480px) {
     h2{
         font-size: 3.5rem;
@@ -104,6 +108,10 @@ a{
     text-decoration: none;
     color: var(--dark);
     font-weight: 700;
+}
+
+.nav li a:hover{
+    color: #0b090aa1;
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
@@ -161,6 +169,14 @@ a{
     padding: 1rem 2rem 1rem 2rem;
     margin-top: 3rem;
     cursor: pointer;
+}
+
+.call:hover{
+    background-color: var(--primary-color);
+}
+
+.slider-content a:hover{
+    color: rgb(56, 56, 56);
 }
 
 @media (max-width: 280px) {

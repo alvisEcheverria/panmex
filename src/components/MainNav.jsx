@@ -8,9 +8,9 @@ const MainNav = () => {
     const sections = {
         inicio: 0,
         nosotros: 600,
-        productos: 1700,
-        menu: 2600,
-        sucursales: 3300,
+        productos: 1600,
+        menu: 2500,
+        sucursales: 3200,
         contacto: 3900,
     };
   
