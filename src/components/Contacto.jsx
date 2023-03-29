@@ -34,7 +34,7 @@ const Contacto = () => {
                     <a href="https://www.facebook.com/panmexoficial" target='_blank'><i className="fa-brands fa-facebook-f icon-cursor"></i></a>
                     <a href="https://twitter.com/PanmexOficial" target='_blank'><i className="fa-brands fa-twitter icon-cursor"></i></a>
                     <a href="https://www.instagram.com/panmexoficial/" target='_blank'><i className="fa-brands fa-instagram icon-cursor"></i></a>
-                    <a href="#" target='_blank'><i className="fa-brands fa-whatsapp icon-cursor"></i></a>
+                    <a href='https://wa.me/525615775794' target='_blank'><i className="fa-brands fa-whatsapp icon-cursor"></i></a>
                 </div>
                 <form onSubmit={sendEmail} className='contact-form'>
                     <h2 className='title-contact'>Contáctanos</h2>

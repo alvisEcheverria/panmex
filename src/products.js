@@ -489,13 +489,13 @@ const menu = [
                 name: 'Milanesa Asada',
                 bigPrice: 66.00,
                 img: milanesa,
-            },
+            },/*
             {
                 name: 'Orden de frijoles',
                 midPrice: null,
                 bigPrice: 0,
                 img: frijoles,
-            },
+            },*/
             {
                 name: 'Papas a la Francesa',
                 midPrice: null,
@@ -517,7 +517,7 @@ const menu = [
                 img: enchiladasSuizas,
             }
         ]
-    },
+    },/*
     {
         products: 'Platos Fuertes',
         productImg: "fa-solid fa-utensils",
@@ -559,7 +559,7 @@ const menu = [
                 img: arrozLeche
             }
         ]
-    }
+    }*/
 ]
 
 export default menu;
