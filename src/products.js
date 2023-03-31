@@ -314,13 +314,13 @@ const menu = [
                 bigPrice: 78.00,
                 img: tortaResQueso,
             },
-            {
+            /*{
                 name: 'Cubana',
                 description: 'Bisteck de res, pierna, salchichas, jamon, queso panela y queso oaxaca',
                 midPrice: null,
                 bigPrice: 80.00,
                 img: tortaCubana,
-            },
+            },*/
             {
                 name: 'Norteña',
                 description: 'Pierna, chorizo y queso manchego',
@@ -485,11 +485,11 @@ const menu = [
                 bigPrice: 50.00,
                 img: molletes,
             },
-            {
+            /*{
                 name: 'Milanesa Asada',
                 bigPrice: 66.00,
                 img: milanesa,
-            },/*
+            },
             {
                 name: 'Orden de frijoles',
                 midPrice: null,
@@ -509,13 +509,13 @@ const menu = [
                 bigPrice: 65.00,
                 img: ensaladas,
             },
-            {
+            /*{
                 name: 'Enchiladas suizas',
                 description: 'Pollo, tomates verdes y queso manchego',
                 midPrice: null,
                 bigPrice: 0,
                 img: enchiladasSuizas,
-            }
+            }*/
         ]
     },/*
     {
