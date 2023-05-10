@@ -10,11 +10,11 @@ const Contacto = () => {
         subject: '',
         message: '',
     });     
-
+    
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_fpzpys9', 'template_pdeakuk', e.target, 'AwRqltbwZwBdMX1wF')
+        emailjs.sendForm('service_n8mqwe5', 'template_5fhyew4', e.target, 'W561B0BqfoENqoAt8')
             .then(result => console.log(result))
             .catch(error => console.log(error))
 

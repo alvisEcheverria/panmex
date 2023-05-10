@@ -293,34 +293,34 @@ const menu = [
             {
                 name: 'Milanesa de Pollo',
                 midPrice: null,
-                bigPrice: 70.00,
+                bigPrice: 74.00,
                 img: tortaMilanesa,
             },
             {
                 name: 'Milanesa de Pollo con Queso',
                 midPrice: null,
-                bigPrice: 78.00,
+                bigPrice: 82.00,
                 img: milanesaQueso,
             },
             {
                 name: 'Milanesa de Res',
                 midPrice: null,
-                bigPrice: 70.00,
+                bigPrice: 73.00,
                 img: tortaRes,
             },
             {
                 name: 'Milanesa de Res con Queso',
                 midPrice: null,
-                bigPrice: 78.00,
+                bigPrice: 81.00,
                 img: tortaResQueso,
             },
-            /*{
+            {
                 name: 'Cubana',
                 description: 'Bisteck de res, pierna, salchichas, jamon, queso panela y queso oaxaca',
                 midPrice: null,
-                bigPrice: 80.00,
+                bigPrice: 110.00,
                 img: tortaCubana,
-            },*/
+            },
             {
                 name: 'Norteña',
                 description: 'Pierna, chorizo y queso manchego',
@@ -344,7 +344,7 @@ const menu = [
                 name: 'Rusa',
                 description: 'Milanesa, pierna y queso panela',
                 midPrice: null,
-                bigPrice: 80.00,
+                bigPrice: 83.00,
                 img: tortaRusa,
             },
             {
@@ -363,7 +363,7 @@ const menu = [
                 name: 'Star',
                 description: 'Milanesa, chuleta y queso manchego',
                 midPrice: null,
-                bigPrice: 80.00,
+                bigPrice: 83.00,
                 img: tortaStar,
             }
         ]
@@ -377,7 +377,7 @@ const menu = [
                 description: 'Carne de Res, queso amarillo, cebolla, jitomate y lechuga romana',
                 smallPrice: null,
                 midPrice: null,
-                bigPrice: 50.00,
+                bigPrice: 55.00,
                 img: hamburguesa,
             },
             {
@@ -397,14 +397,14 @@ const menu = [
                 name: 'Hojaldra',
                 description: 'Rellena de mole con pollo y queso',
                 midPrice: null,
-                bigPrice: 42.00,
+                bigPrice: 46.00,
                 img: hojaldra,
             },
             {
                 name: 'Bollos rellenos',
                 description: 'Escoge tu relleno favorito: atún, jamón, pollo o mole con pollo',
                 midPrice: null,
-                bigPrice: 37.00,
+                bigPrice: 44.00,
                 img: bollosRellenos,
             }
         ]
@@ -424,7 +424,7 @@ const menu = [
             {
                 name: 'Enchiladas de Pollo en Salsa Verde o Roja',
                 description: 'Acompañados con porción individual de frijoles refritos, cebolla y queso',
-                bigPrice: 70.00,
+                bigPrice: 74.00,
                 img: enchiladas,
             },
             {
@@ -435,15 +435,15 @@ const menu = [
                 bistec: "Bistec",
                 egg: "Huevo",
                 singlePrice: 59.00,
-                chickenPrice: 69.00,
-                bistecPrice: 69.00,
-                eggPrice: 69.00,
+                chickenPrice: 73.00,
+                bistecPrice: 73.00,
+                eggPrice: 73.00,
                 img: chilaquilesPollo,
             },
             {
                 name: 'Flautas de Pollo o Res',
                 description: 'Tres flautas servidas en cama de lechuga romana con jitomate y cebolla',
-                bigPrice: 70.00,
+                bigPrice: 74.00,
                 img: flautas,
             },
             {
@@ -506,7 +506,7 @@ const menu = [
                 name: 'Ensaladas',
                 description: 'Atún, pollo y jamón',
                 midPrice: null,
-                bigPrice: 65.00,
+                bigPrice: 69.00,
                 img: ensaladas,
             },
             /*{

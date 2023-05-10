@@ -176,7 +176,7 @@ a{
 }
 
 .slider-content a:hover{
-    color: rgb(56, 56, 56);
+    color: var(--dark);
 }
 
 @media (max-width: 280px) {
@@ -756,6 +756,11 @@ a{
     color: var(--primary-color);
 }
 
+.social i:hover{
+    filter: drop-shadow(0 0 0.75rem var(--dark));
+    transform: scale(1.02);
+}
+
 .title-contact{
     color: var(--primary-color);
 }
@@ -826,6 +831,11 @@ a{
     font-size: 1.6rem;
     font-weight: 700;
     cursor: pointer;
+}
+
+.send-btn:hover{
+    background-color: var(--primary-color);
+    color: var(--dark);
 }
 
 .icon-cursor{
